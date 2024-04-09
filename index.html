@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NODE-TEL TECH VERIFICATION PAGE</title>
+</head>
+
+<body>
+    <div class="cover"></div>
+    <main>
+        <div class="our-info-ctn">
+            <div class="our-name-ctn">
+                <h3 class="name">NODE-TEL TECH VERIFICATION PAGE</h3>
+                <hr>
+            </div>
+
+            <div class="address-ctn">
+                <img src="./images/icons8-location-50.png" alt="" class="address-icon">
+                <p class="address">Al Sharqi St, Sultan bin Zayed the First Al Sharqi St, Abu Dhabi.</p>
+            </div>
+
+            <ul class="warranty-info-ctn">
+                <li class="warranty-info">Note we are giving a 1 year warranty.</li>
+                <li class="warranty-info">All item will be replaced within 3months if any factory error persist.</li>
+                <li class="warranty-info">All gadgets under warranty could only be fixed for customers after the first 3
+                    months.</li>
+                <li class="warranty-info">The fixing warranty lasts for 9months</li>
+            </ul>
+        </div>
+        <!-- ********** -->
+        <div class="form-container">
+            <h2 class="form-head">Validate Your Warranty</h2>
+            <form class="form" method="post" name="myForm" netlify>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input required="" name="name" id="name" type="text" placeholder="Fill in Name">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input required="" name="number" id="number" type="number" placeholder="***********">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Product Serial Number</label>
+                    <textarea required="" cols="50" rows="10" id="textarea" name="textarea"
+                        placeholder="Serial Number"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date of Purchase</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <button type="submit" class="form-submit-btn">Submit</button>
+            </form>
+
+
+        </div>
+    </main>
+
+    <div class="result-ctn">
+        <h1 class="dothis">DO NOT PAY!!!</h1>
+        <img src="./images/redX-icon.svg" alt="" class="x-icon">
+        <p class="result-message">The serial number "<span class="serial-num">MGXCQRKDPF</span>" is not Valid. This is
+            Probably
+            a
+            Chinese Product please <span class="suggest">Do not Pay!!</span></p>
+        <button class="close-btn">Close</button>
+        <p>The phone number you provided would be contacted by our company, Thank You.</p>
+    </div>
+
+    <div class="result-pass-ctn">
+        <p>Verified Arab Emirates Duplicate ✓</p>
+        <h1 class="dothis">PROCEED TO PAY!!!</h1>
+        <img src="./images/check-icon.svg" alt="" class="check-icon">
+        <p class="result-message">The serial number <span class="serial-num">MGXCQRKDPF</span> is Valid. <span
+                class="suggest-pay">Proceed to Pay!!</span></p>
+        <button class="proceed-btn">Proceed</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
