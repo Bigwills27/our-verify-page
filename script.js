@@ -14,16 +14,11 @@ const form = document.querySelector(".form");
 
 const correctSerial = "MGXCQRKDPF";
 
-// submitBtn.addEventListener("click", function (event) {
-//   event.preventDefault();
-// });
-
-function sendData() {
-  const formData = new FormData(form);
-
-  fetch("https://formspree.io/ajbodesecond@gmail.com", {
+function sendData(formData) {
+  fetch("/", {
     method: "POST",
-    body: formData,
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
   })
     .then((response) => {
       if (response.ok) {
@@ -45,7 +40,8 @@ submitBtn.addEventListener("click", () => {
     cover.style.display = "flex";
     resultCtn.style.display = "none";
     resultPassCtn.style.display = "flex";
-    sendData();
+    const formData = new FormData(document.querySelector('form'));
+    sendData(formData);
   } else {
     cover.style.display = "flex";
     resultCtn.style.display = "flex";
