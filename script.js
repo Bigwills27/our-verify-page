@@ -14,9 +14,9 @@ const form = document.querySelector(".form");
 
 const correctSerial = "MGXCQRKDPF";
 
-submitBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-});
+// submitBtn.addEventListener("click", function (event) {
+//   event.preventDefault();
+// });
 
 submitBtn.addEventListener("click", () => {
   let typed = textarea.value;
@@ -25,9 +25,6 @@ submitBtn.addEventListener("click", () => {
     cover.style.display = "flex";
     resultCtn.style.display = "none";
     resultPassCtn.style.display = "flex";
-    setTimeout(() => {
-      form.submit();
-    }, 5000);
   } else {
     cover.style.display = "flex";
     resultCtn.style.display = "flex";
