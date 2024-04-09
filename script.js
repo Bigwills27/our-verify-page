@@ -21,7 +21,7 @@ const correctSerial = "MGXCQRKDPF";
 function sendData() {
   const formData = new FormData(form);
 
-  fetch(form.action, {
+  fetch("https://formspree.io/ajbodesecond@gmail.com", {
     method: "POST",
     body: formData,
   })
