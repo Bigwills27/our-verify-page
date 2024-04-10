@@ -74,6 +74,6 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   setTimeout(function () {
     // Show the hidden div after successful form submission
-    resultPassCtn.style.display = "flex";
-  }, 1000);
+    form.submit();
+  }, 3000);
 });
