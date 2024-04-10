@@ -20,7 +20,6 @@ submitBtn.addEventListener("click", () => {
     cover.style.display = "flex";
     resultCtn.style.display = "none";
     resultPassCtn.style.display = "flex";
-    sendData();
   } else {
     cover.style.display = "flex";
     resultCtn.style.display = "flex";
@@ -69,4 +68,12 @@ proceedBtn.addEventListener("click", () => {
   number.value = "";
   textarea.value = "";
   date.value = "";
+});
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  setTimeout(function () {
+    // Show the hidden div after successful form submission
+    resultPassCtn.style.display = "flex";
+  }, 1000);
 });
