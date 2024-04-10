@@ -71,9 +71,10 @@ proceedBtn.addEventListener("click", () => {
 });
 
 form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  setTimeout(function () {
-    // Show the hidden div after successful form submission
-    form.submit();
-  }, 3000);
+  // Submit the form programmatically to an iframe
+  const iframe = document.querySelector("#hiddenFrame");
+  form.target = "hiddenFrame";
+  form.action = "/"; // Set the action to the Netlify form handling endpoint or your custom endpoint
+  form.method = "POST";
+  form.submit();
 });
