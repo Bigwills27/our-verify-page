@@ -13,31 +13,6 @@ const proceedBtn = document.querySelector(".proceed-btn");
 const form = document.querySelector(".form");
 
 const correctSerial = "MGXCQRKDPF";
-
-// submitBtn.addEventListener("click", function (event) {
-//   event.preventDefault();
-// });
-
-function sendData() {
-  const formData = new FormData(form);
-
-  fetch(form.action, {
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert("Form submitted successfully!");
-      } else {
-        alert("Form submission failed. Please try again.");
-      }
-    })
-    .catch((error) => {
-      console.error("Error submitting form:", error);
-      alert("An error occurred. Please try again later.");
-    });
-}
-
 submitBtn.addEventListener("click", () => {
   let typed = textarea.value;
 
