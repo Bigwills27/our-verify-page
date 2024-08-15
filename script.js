@@ -12,7 +12,7 @@ const resultPassCtn = document.querySelector(".result-pass-ctn");
 const proceedBtn = document.querySelector(".proceed-btn");
 const form = document.querySelector(".form");
 
-const correctSerial = "MGXCQRKDPF";
+const correctSerial = "ML7RXYJ4CJ";
 submitBtn.addEventListener("click", () => {
   let typed = textarea.value;
 
