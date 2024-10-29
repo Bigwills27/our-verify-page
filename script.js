@@ -14,7 +14,7 @@ const proceedBtn = document.querySelector(".proceed-btn");
 const form = document.querySelector(".form");
 
 // const correctSerial = "ML7RXYJ4CJ";
-const correctSerial = ["MGXBBMGX", "MGXCQRKDPF"];
+const correctSerial = ["MGXBBMGX"];
 submitBtn.addEventListener("click", () => {
   let typed = textarea.value.toUpperCase().replace(/\s+/g, ""); // Convert to uppercase
 
